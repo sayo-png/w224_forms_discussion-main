@@ -6,15 +6,23 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <!-- Add fonts from Adobe fonts or Google Fonts -->
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap');
+    </style>
+
     <title>Submit Recommendations</title>
     <!-- Add a favicon -->
+     <img src = "/images/plane.jpeg" alt = "Plane in the sky">
 </head>
 <body>
   <!-- Implement a skip to main! -->
+   <a class = "skip to main" href = "#main">Skip to main Content</a>
+   <main id = "main">
     <!-- <form action="" method="post"> Connect to formspree.io-->
+      <form action="https://formspree.io/f/mgaarkob" method="POST" >
         <label for="name">Name:</label>
         <input type="text" id="name" name="name"><br><br>
-<div class="radio">
+        <div class="radio">
         <label>Area of Submission:</label><br>
         <!-- How can the label and button line up and be easily navigatable? -->
   <input type="radio" id="travel" name="interest" value="travel" required>
@@ -36,5 +44,6 @@
 
         <button type="reset">Reset</button>
       </form>
+</main>
 </body>
 </html>
